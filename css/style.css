@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url("normalize.css"); /* ------- Reset all CSS Styles */
+
+/********************
+共通
+******************************/
+/* .loading {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: deepskyblue;
+    transition: all 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    &.loaded{
+      opacity: 0;
+      visibility: hidden;
+    } */
+
+body {
+    font-family: "Nico Moji","M PLUS Rounded 1c","游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+    background-image: url("../images/back.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 192, 203, 0.5);
+}
+
+
+
+
+/* 共通　大枠 */
+h2{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  display: inline-block;
+  margin: 30px 0 30px 30px;
+  padding: 5px;
+}
+
+
+/* 共通　ヘッダー・メインナビゲーション */
+.main_nav{
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.main_nav ul{
+  width: 1040px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.main_nav ul li{
+  width: 25%;
+  text-align: center;
+  margin-top: 18px;
+}
+.main_nav ul li a{
+  padding: 10px 0;
+  display: block; /* ナビをクリックしやすくする */
+  color: #ff99a8;
+  font-size: 25px;
+  text-decoration: none;
+  letter-spacing: 5px;
+  transition: all 0.2s;
+}
+.main_nav ul li a:hover{
+  color: #cc1470;
+  transition: all 0.4s;
+}
+
+/* 共通　フッター */
+.footer_top{
+  display: table;
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.footer_top .copyright{
+  margin-top: 20px;
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff99a8;
+  letter-spacing: 0.2rem;/* r(px root)em(one litter) */
+}
+.footer_top .sns{
+  text-align: center;
+  display: block;
+
+}
+.footer_top .sns img{
+  width: 50px;
+  margin: 60px 40px;
+}
+
+/********************
+index.html
+**************************************************/
+/* index.html　メインビジュアル */
+.main_video video{
+  width: 100%;
+}
+
+/* index.html イントロエリア部分 */
+.info{
+  width: 100%;
+  margin: 30px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.top1{
+  margin-left: 25px;
+}
+.section_top img{
+  width: 465px;
+  margin-right: 20px;
+}
+.section_top img:hover{
+  opacity: 0.8;
+}
+/* index.html バナーエリア */
+.live .liveinfo{
+  width: 1000px;
+  margin: 0 auto;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.liveinfo h3{
+  margin-left: 400px;
+}
+.liveinfo p{
+  text-align: center;
+}
+
+
+/* プロフィール */
+.profile_main img{
+  width: 100%;
+}
+.profile{
+  display: flex;
+  margin-left: 300px;
+}
+.profile img{
+  width: 400px;
+  margin-bottom: 30px;
+}
+.profile .profile_right{
+  margin: 40px 0 50px 150px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+}
+.profile .profile_right h3{
+  letter-spacing: 3px;
+}
+.profile .profile_right p{
+  margin-bottom: 40px;
+}
+
+
+/* ディスコ */
+
+.disco_main img{
+  width: 100%;
+}
+.disco_album{
+  text-align: center;
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.disco_album .section_album img{
+  width: 80%;
+  border: 8px ridge #ffb6c1;
+}
+.disco_album .section_album h3{
+  margin-bottom: 0;
+}
+.disco_album .section_album p{
+  margin-top: 0;
+}
+.disco_single{
+  text-align: center;
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.disco_single .section_single img{
+  width: 80%;
+  border: 8px ridge #ffb6c1;
+}
+.disco_single .section_single h3{
+  margin-bottom: 0;
+}
+.disco_single .section_single p{
+  margin-top: 0;
+}
+
+/* ビデオ */
+.video{
+  text-align: center;
+  width: 97%;
+  margin: 0 auto;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; */
+}
+
+.videoin a img{
+  width: 50%;
+  border: 8px ridge #ffb6c1;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.videoin a img:hover{
+  opacity: 0.8;
+}
